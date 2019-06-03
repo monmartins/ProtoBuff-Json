@@ -3,8 +3,8 @@
 
 package project;
 
-public final class DummyObject {
-  private DummyObject() {}
+public final class DummyObjectC {
+  private DummyObjectC() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -14,8 +14,8 @@ public final class DummyObject {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface PersonOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:tutorial.Person)
+  public interface DummyObjectOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:tutorial.DummyObject)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -56,42 +56,42 @@ public final class DummyObject {
         getEmailBytes();
 
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    java.util.List<project.DummyObject.Person.PhoneNumber> 
+    java.util.List<project.DummyObjectC.DummyObject.PhoneNumber> 
         getPhonesList();
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    project.DummyObject.Person.PhoneNumber getPhones(int index);
+    project.DummyObjectC.DummyObject.PhoneNumber getPhones(int index);
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
     int getPhonesCount();
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    java.util.List<? extends project.DummyObject.Person.PhoneNumberOrBuilder> 
+    java.util.List<? extends project.DummyObjectC.DummyObject.PhoneNumberOrBuilder> 
         getPhonesOrBuilderList();
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    project.DummyObject.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
+    project.DummyObjectC.DummyObject.PhoneNumberOrBuilder getPhonesOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code tutorial.Person}
+   * Protobuf type {@code tutorial.DummyObject}
    */
-  public  static final class Person extends
+  public  static final class DummyObject extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:tutorial.Person)
-      PersonOrBuilder {
+      // @@protoc_insertion_point(message_implements:tutorial.DummyObject)
+      DummyObjectOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Person.newBuilder() to construct.
-    private Person(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use DummyObject.newBuilder() to construct.
+    private DummyObject(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Person() {
+    private DummyObject() {
       name_ = "";
       id_ = 0;
       email_ = "";
@@ -103,7 +103,7 @@ public final class DummyObject {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Person(
+    private DummyObject(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -141,11 +141,11 @@ public final class DummyObject {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-                phones_ = new java.util.ArrayList<project.DummyObject.Person.PhoneNumber>();
+                phones_ = new java.util.ArrayList<project.DummyObjectC.DummyObject.PhoneNumber>();
                 mutable_bitField0_ |= 0x00000008;
               }
               phones_.add(
-                  input.readMessage(project.DummyObject.Person.PhoneNumber.PARSER, extensionRegistry));
+                  input.readMessage(project.DummyObjectC.DummyObject.PhoneNumber.PARSER, extensionRegistry));
               break;
             }
             default: {
@@ -172,19 +172,19 @@ public final class DummyObject {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return project.DummyObject.internal_static_tutorial_Person_descriptor;
+      return project.DummyObjectC.internal_static_tutorial_DummyObject_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return project.DummyObject.internal_static_tutorial_Person_fieldAccessorTable
+      return project.DummyObjectC.internal_static_tutorial_DummyObject_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              project.DummyObject.Person.class, project.DummyObject.Person.Builder.class);
+              project.DummyObjectC.DummyObject.class, project.DummyObjectC.DummyObject.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code tutorial.Person.PhoneType}
+     * Protobuf enum {@code tutorial.DummyObject.PhoneType}
      */
     public enum PhoneType
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -259,7 +259,7 @@ public final class DummyObject {
       }
       public static final com.google.protobuf.Descriptors.EnumDescriptor
           getDescriptor() {
-        return project.DummyObject.Person.getDescriptor().getEnumTypes().get(0);
+        return project.DummyObjectC.DummyObject.getDescriptor().getEnumTypes().get(0);
       }
 
       private static final PhoneType[] VALUES = values();
@@ -279,11 +279,11 @@ public final class DummyObject {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:tutorial.Person.PhoneType)
+      // @@protoc_insertion_point(enum_scope:tutorial.DummyObject.PhoneType)
     }
 
     public interface PhoneNumberOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:tutorial.Person.PhoneNumber)
+        // @@protoc_insertion_point(interface_extends:tutorial.DummyObject.PhoneNumber)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -301,20 +301,20 @@ public final class DummyObject {
           getNumberBytes();
 
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
        */
       boolean hasType();
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
        */
-      project.DummyObject.Person.PhoneType getType();
+      project.DummyObjectC.DummyObject.PhoneType getType();
     }
     /**
-     * Protobuf type {@code tutorial.Person.PhoneNumber}
+     * Protobuf type {@code tutorial.DummyObject.PhoneNumber}
      */
     public  static final class PhoneNumber extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:tutorial.Person.PhoneNumber)
+        // @@protoc_insertion_point(message_implements:tutorial.DummyObject.PhoneNumber)
         PhoneNumberOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use PhoneNumber.newBuilder() to construct.
@@ -359,7 +359,7 @@ public final class DummyObject {
               case 16: {
                 int rawValue = input.readEnum();
                   @SuppressWarnings("deprecation")
-                project.DummyObject.Person.PhoneType value = project.DummyObject.Person.PhoneType.valueOf(rawValue);
+                project.DummyObjectC.DummyObject.PhoneType value = project.DummyObjectC.DummyObject.PhoneType.valueOf(rawValue);
                 if (value == null) {
                   unknownFields.mergeVarintField(2, rawValue);
                 } else {
@@ -389,15 +389,15 @@ public final class DummyObject {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return project.DummyObject.internal_static_tutorial_Person_PhoneNumber_descriptor;
+        return project.DummyObjectC.internal_static_tutorial_DummyObject_PhoneNumber_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return project.DummyObject.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
+        return project.DummyObjectC.internal_static_tutorial_DummyObject_PhoneNumber_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                project.DummyObject.Person.PhoneNumber.class, project.DummyObject.Person.PhoneNumber.Builder.class);
+                project.DummyObjectC.DummyObject.PhoneNumber.class, project.DummyObjectC.DummyObject.PhoneNumber.Builder.class);
       }
 
       private int bitField0_;
@@ -446,18 +446,18 @@ public final class DummyObject {
       public static final int TYPE_FIELD_NUMBER = 2;
       private int type_;
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
        */
       public boolean hasType() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+       * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
        */
-      public project.DummyObject.Person.PhoneType getType() {
+      public project.DummyObjectC.DummyObject.PhoneType getType() {
         @SuppressWarnings("deprecation")
-        project.DummyObject.Person.PhoneType result = project.DummyObject.Person.PhoneType.valueOf(type_);
-        return result == null ? project.DummyObject.Person.PhoneType.HOME : result;
+        project.DummyObjectC.DummyObject.PhoneType result = project.DummyObjectC.DummyObject.PhoneType.valueOf(type_);
+        return result == null ? project.DummyObjectC.DummyObject.PhoneType.HOME : result;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -510,10 +510,10 @@ public final class DummyObject {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof project.DummyObject.Person.PhoneNumber)) {
+        if (!(obj instanceof project.DummyObjectC.DummyObject.PhoneNumber)) {
           return super.equals(obj);
         }
-        project.DummyObject.Person.PhoneNumber other = (project.DummyObject.Person.PhoneNumber) obj;
+        project.DummyObjectC.DummyObject.PhoneNumber other = (project.DummyObjectC.DummyObject.PhoneNumber) obj;
 
         boolean result = true;
         result = result && (hasNumber() == other.hasNumber());
@@ -549,69 +549,69 @@ public final class DummyObject {
         return hash;
       }
 
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(byte[] data)
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(java.io.InputStream input)
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static project.DummyObject.Person.PhoneNumber parseDelimitedFrom(java.io.InputStream input)
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static project.DummyObject.Person.PhoneNumber parseDelimitedFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static project.DummyObject.Person.PhoneNumber parseFrom(
+      public static project.DummyObjectC.DummyObject.PhoneNumber parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -624,7 +624,7 @@ public final class DummyObject {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(project.DummyObject.Person.PhoneNumber prototype) {
+      public static Builder newBuilder(project.DummyObjectC.DummyObject.PhoneNumber prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -640,26 +640,26 @@ public final class DummyObject {
         return builder;
       }
       /**
-       * Protobuf type {@code tutorial.Person.PhoneNumber}
+       * Protobuf type {@code tutorial.DummyObject.PhoneNumber}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:tutorial.Person.PhoneNumber)
-          project.DummyObject.Person.PhoneNumberOrBuilder {
+          // @@protoc_insertion_point(builder_implements:tutorial.DummyObject.PhoneNumber)
+          project.DummyObjectC.DummyObject.PhoneNumberOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return project.DummyObject.internal_static_tutorial_Person_PhoneNumber_descriptor;
+          return project.DummyObjectC.internal_static_tutorial_DummyObject_PhoneNumber_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return project.DummyObject.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
+          return project.DummyObjectC.internal_static_tutorial_DummyObject_PhoneNumber_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  project.DummyObject.Person.PhoneNumber.class, project.DummyObject.Person.PhoneNumber.Builder.class);
+                  project.DummyObjectC.DummyObject.PhoneNumber.class, project.DummyObjectC.DummyObject.PhoneNumber.Builder.class);
         }
 
-        // Construct using project.DummyObject.Person.PhoneNumber.newBuilder()
+        // Construct using project.DummyObjectC.DummyObject.PhoneNumber.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -687,17 +687,17 @@ public final class DummyObject {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return project.DummyObject.internal_static_tutorial_Person_PhoneNumber_descriptor;
+          return project.DummyObjectC.internal_static_tutorial_DummyObject_PhoneNumber_descriptor;
         }
 
         @java.lang.Override
-        public project.DummyObject.Person.PhoneNumber getDefaultInstanceForType() {
-          return project.DummyObject.Person.PhoneNumber.getDefaultInstance();
+        public project.DummyObjectC.DummyObject.PhoneNumber getDefaultInstanceForType() {
+          return project.DummyObjectC.DummyObject.PhoneNumber.getDefaultInstance();
         }
 
         @java.lang.Override
-        public project.DummyObject.Person.PhoneNumber build() {
-          project.DummyObject.Person.PhoneNumber result = buildPartial();
+        public project.DummyObjectC.DummyObject.PhoneNumber build() {
+          project.DummyObjectC.DummyObject.PhoneNumber result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -705,8 +705,8 @@ public final class DummyObject {
         }
 
         @java.lang.Override
-        public project.DummyObject.Person.PhoneNumber buildPartial() {
-          project.DummyObject.Person.PhoneNumber result = new project.DummyObject.Person.PhoneNumber(this);
+        public project.DummyObjectC.DummyObject.PhoneNumber buildPartial() {
+          project.DummyObjectC.DummyObject.PhoneNumber result = new project.DummyObjectC.DummyObject.PhoneNumber(this);
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -756,16 +756,16 @@ public final class DummyObject {
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof project.DummyObject.Person.PhoneNumber) {
-            return mergeFrom((project.DummyObject.Person.PhoneNumber)other);
+          if (other instanceof project.DummyObjectC.DummyObject.PhoneNumber) {
+            return mergeFrom((project.DummyObjectC.DummyObject.PhoneNumber)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(project.DummyObject.Person.PhoneNumber other) {
-          if (other == project.DummyObject.Person.PhoneNumber.getDefaultInstance()) return this;
+        public Builder mergeFrom(project.DummyObjectC.DummyObject.PhoneNumber other) {
+          if (other == project.DummyObjectC.DummyObject.PhoneNumber.getDefaultInstance()) return this;
           if (other.hasNumber()) {
             bitField0_ |= 0x00000001;
             number_ = other.number_;
@@ -792,11 +792,11 @@ public final class DummyObject {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          project.DummyObject.Person.PhoneNumber parsedMessage = null;
+          project.DummyObjectC.DummyObject.PhoneNumber parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (project.DummyObject.Person.PhoneNumber) e.getUnfinishedMessage();
+            parsedMessage = (project.DummyObjectC.DummyObject.PhoneNumber) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -885,23 +885,23 @@ public final class DummyObject {
 
         private int type_ = 1;
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
          */
         public boolean hasType() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
          */
-        public project.DummyObject.Person.PhoneType getType() {
+        public project.DummyObjectC.DummyObject.PhoneType getType() {
           @SuppressWarnings("deprecation")
-          project.DummyObject.Person.PhoneType result = project.DummyObject.Person.PhoneType.valueOf(type_);
-          return result == null ? project.DummyObject.Person.PhoneType.HOME : result;
+          project.DummyObjectC.DummyObject.PhoneType result = project.DummyObjectC.DummyObject.PhoneType.valueOf(type_);
+          return result == null ? project.DummyObjectC.DummyObject.PhoneType.HOME : result;
         }
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
          */
-        public Builder setType(project.DummyObject.Person.PhoneType value) {
+        public Builder setType(project.DummyObjectC.DummyObject.PhoneType value) {
           if (value == null) {
             throw new NullPointerException();
           }
@@ -911,7 +911,7 @@ public final class DummyObject {
           return this;
         }
         /**
-         * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
+         * <code>optional .tutorial.DummyObject.PhoneType type = 2 [default = HOME];</code>
          */
         public Builder clearType() {
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -932,16 +932,16 @@ public final class DummyObject {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:tutorial.Person.PhoneNumber)
+        // @@protoc_insertion_point(builder_scope:tutorial.DummyObject.PhoneNumber)
       }
 
-      // @@protoc_insertion_point(class_scope:tutorial.Person.PhoneNumber)
-      private static final project.DummyObject.Person.PhoneNumber DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:tutorial.DummyObject.PhoneNumber)
+      private static final project.DummyObjectC.DummyObject.PhoneNumber DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new project.DummyObject.Person.PhoneNumber();
+        DEFAULT_INSTANCE = new project.DummyObjectC.DummyObject.PhoneNumber();
       }
 
-      public static project.DummyObject.Person.PhoneNumber getDefaultInstance() {
+      public static project.DummyObjectC.DummyObject.PhoneNumber getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -966,7 +966,7 @@ public final class DummyObject {
       }
 
       @java.lang.Override
-      public project.DummyObject.Person.PhoneNumber getDefaultInstanceForType() {
+      public project.DummyObjectC.DummyObject.PhoneNumber getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1073,36 +1073,36 @@ public final class DummyObject {
     }
 
     public static final int PHONES_FIELD_NUMBER = 4;
-    private java.util.List<project.DummyObject.Person.PhoneNumber> phones_;
+    private java.util.List<project.DummyObjectC.DummyObject.PhoneNumber> phones_;
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<project.DummyObject.Person.PhoneNumber> getPhonesList() {
+    public java.util.List<project.DummyObjectC.DummyObject.PhoneNumber> getPhonesList() {
       return phones_;
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<? extends project.DummyObject.Person.PhoneNumberOrBuilder> 
+    public java.util.List<? extends project.DummyObjectC.DummyObject.PhoneNumberOrBuilder> 
         getPhonesOrBuilderList() {
       return phones_;
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
     public int getPhonesCount() {
       return phones_.size();
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    public project.DummyObject.Person.PhoneNumber getPhones(int index) {
+    public project.DummyObjectC.DummyObject.PhoneNumber getPhones(int index) {
       return phones_.get(index);
     }
     /**
-     * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+     * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
      */
-    public project.DummyObject.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
+    public project.DummyObjectC.DummyObject.PhoneNumberOrBuilder getPhonesOrBuilder(
         int index) {
       return phones_.get(index);
     }
@@ -1180,10 +1180,10 @@ public final class DummyObject {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof project.DummyObject.Person)) {
+      if (!(obj instanceof project.DummyObjectC.DummyObject)) {
         return super.equals(obj);
       }
-      project.DummyObject.Person other = (project.DummyObject.Person) obj;
+      project.DummyObjectC.DummyObject other = (project.DummyObjectC.DummyObject) obj;
 
       boolean result = true;
       result = result && (hasName() == other.hasName());
@@ -1235,69 +1235,69 @@ public final class DummyObject {
       return hash;
     }
 
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static project.DummyObject.Person parseFrom(byte[] data)
+    public static project.DummyObjectC.DummyObject parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static project.DummyObject.Person parseFrom(java.io.InputStream input)
+    public static project.DummyObjectC.DummyObject parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static project.DummyObject.Person parseDelimitedFrom(java.io.InputStream input)
+    public static project.DummyObjectC.DummyObject parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static project.DummyObject.Person parseDelimitedFrom(
+    public static project.DummyObjectC.DummyObject parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static project.DummyObject.Person parseFrom(
+    public static project.DummyObjectC.DummyObject parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1310,7 +1310,7 @@ public final class DummyObject {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(project.DummyObject.Person prototype) {
+    public static Builder newBuilder(project.DummyObjectC.DummyObject prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1326,26 +1326,26 @@ public final class DummyObject {
       return builder;
     }
     /**
-     * Protobuf type {@code tutorial.Person}
+     * Protobuf type {@code tutorial.DummyObject}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:tutorial.Person)
-        project.DummyObject.PersonOrBuilder {
+        // @@protoc_insertion_point(builder_implements:tutorial.DummyObject)
+        project.DummyObjectC.DummyObjectOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return project.DummyObject.internal_static_tutorial_Person_descriptor;
+        return project.DummyObjectC.internal_static_tutorial_DummyObject_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return project.DummyObject.internal_static_tutorial_Person_fieldAccessorTable
+        return project.DummyObjectC.internal_static_tutorial_DummyObject_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                project.DummyObject.Person.class, project.DummyObject.Person.Builder.class);
+                project.DummyObjectC.DummyObject.class, project.DummyObjectC.DummyObject.Builder.class);
       }
 
-      // Construct using project.DummyObject.Person.newBuilder()
+      // Construct using project.DummyObjectC.DummyObject.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1382,17 +1382,17 @@ public final class DummyObject {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return project.DummyObject.internal_static_tutorial_Person_descriptor;
+        return project.DummyObjectC.internal_static_tutorial_DummyObject_descriptor;
       }
 
       @java.lang.Override
-      public project.DummyObject.Person getDefaultInstanceForType() {
-        return project.DummyObject.Person.getDefaultInstance();
+      public project.DummyObjectC.DummyObject getDefaultInstanceForType() {
+        return project.DummyObjectC.DummyObject.getDefaultInstance();
       }
 
       @java.lang.Override
-      public project.DummyObject.Person build() {
-        project.DummyObject.Person result = buildPartial();
+      public project.DummyObjectC.DummyObject build() {
+        project.DummyObjectC.DummyObject result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1400,8 +1400,8 @@ public final class DummyObject {
       }
 
       @java.lang.Override
-      public project.DummyObject.Person buildPartial() {
-        project.DummyObject.Person result = new project.DummyObject.Person(this);
+      public project.DummyObjectC.DummyObject buildPartial() {
+        project.DummyObjectC.DummyObject result = new project.DummyObjectC.DummyObject(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1464,16 +1464,16 @@ public final class DummyObject {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof project.DummyObject.Person) {
-          return mergeFrom((project.DummyObject.Person)other);
+        if (other instanceof project.DummyObjectC.DummyObject) {
+          return mergeFrom((project.DummyObjectC.DummyObject)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(project.DummyObject.Person other) {
-        if (other == project.DummyObject.Person.getDefaultInstance()) return this;
+      public Builder mergeFrom(project.DummyObjectC.DummyObject other) {
+        if (other == project.DummyObjectC.DummyObject.getDefaultInstance()) return this;
         if (other.hasName()) {
           bitField0_ |= 0x00000001;
           name_ = other.name_;
@@ -1539,11 +1539,11 @@ public final class DummyObject {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        project.DummyObject.Person parsedMessage = null;
+        project.DummyObjectC.DummyObject parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (project.DummyObject.Person) e.getUnfinishedMessage();
+          parsedMessage = (project.DummyObjectC.DummyObject) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1738,22 +1738,22 @@ public final class DummyObject {
         return this;
       }
 
-      private java.util.List<project.DummyObject.Person.PhoneNumber> phones_ =
+      private java.util.List<project.DummyObjectC.DummyObject.PhoneNumber> phones_ =
         java.util.Collections.emptyList();
       private void ensurePhonesIsMutable() {
         if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          phones_ = new java.util.ArrayList<project.DummyObject.Person.PhoneNumber>(phones_);
+          phones_ = new java.util.ArrayList<project.DummyObjectC.DummyObject.PhoneNumber>(phones_);
           bitField0_ |= 0x00000008;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          project.DummyObject.Person.PhoneNumber, project.DummyObject.Person.PhoneNumber.Builder, project.DummyObject.Person.PhoneNumberOrBuilder> phonesBuilder_;
+          project.DummyObjectC.DummyObject.PhoneNumber, project.DummyObjectC.DummyObject.PhoneNumber.Builder, project.DummyObjectC.DummyObject.PhoneNumberOrBuilder> phonesBuilder_;
 
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public java.util.List<project.DummyObject.Person.PhoneNumber> getPhonesList() {
+      public java.util.List<project.DummyObjectC.DummyObject.PhoneNumber> getPhonesList() {
         if (phonesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(phones_);
         } else {
@@ -1761,7 +1761,7 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public int getPhonesCount() {
         if (phonesBuilder_ == null) {
@@ -1771,9 +1771,9 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public project.DummyObject.Person.PhoneNumber getPhones(int index) {
+      public project.DummyObjectC.DummyObject.PhoneNumber getPhones(int index) {
         if (phonesBuilder_ == null) {
           return phones_.get(index);
         } else {
@@ -1781,10 +1781,10 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder setPhones(
-          int index, project.DummyObject.Person.PhoneNumber value) {
+          int index, project.DummyObjectC.DummyObject.PhoneNumber value) {
         if (phonesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1798,10 +1798,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder setPhones(
-          int index, project.DummyObject.Person.PhoneNumber.Builder builderForValue) {
+          int index, project.DummyObjectC.DummyObject.PhoneNumber.Builder builderForValue) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           phones_.set(index, builderForValue.build());
@@ -1812,9 +1812,9 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public Builder addPhones(project.DummyObject.Person.PhoneNumber value) {
+      public Builder addPhones(project.DummyObjectC.DummyObject.PhoneNumber value) {
         if (phonesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1828,10 +1828,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder addPhones(
-          int index, project.DummyObject.Person.PhoneNumber value) {
+          int index, project.DummyObjectC.DummyObject.PhoneNumber value) {
         if (phonesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1845,10 +1845,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder addPhones(
-          project.DummyObject.Person.PhoneNumber.Builder builderForValue) {
+          project.DummyObjectC.DummyObject.PhoneNumber.Builder builderForValue) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           phones_.add(builderForValue.build());
@@ -1859,10 +1859,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder addPhones(
-          int index, project.DummyObject.Person.PhoneNumber.Builder builderForValue) {
+          int index, project.DummyObjectC.DummyObject.PhoneNumber.Builder builderForValue) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           phones_.add(index, builderForValue.build());
@@ -1873,10 +1873,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder addAllPhones(
-          java.lang.Iterable<? extends project.DummyObject.Person.PhoneNumber> values) {
+          java.lang.Iterable<? extends project.DummyObjectC.DummyObject.PhoneNumber> values) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1888,7 +1888,7 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder clearPhones() {
         if (phonesBuilder_ == null) {
@@ -1901,7 +1901,7 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
       public Builder removePhones(int index) {
         if (phonesBuilder_ == null) {
@@ -1914,16 +1914,16 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public project.DummyObject.Person.PhoneNumber.Builder getPhonesBuilder(
+      public project.DummyObjectC.DummyObject.PhoneNumber.Builder getPhonesBuilder(
           int index) {
         return getPhonesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public project.DummyObject.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
+      public project.DummyObjectC.DummyObject.PhoneNumberOrBuilder getPhonesOrBuilder(
           int index) {
         if (phonesBuilder_ == null) {
           return phones_.get(index);  } else {
@@ -1931,9 +1931,9 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public java.util.List<? extends project.DummyObject.Person.PhoneNumberOrBuilder> 
+      public java.util.List<? extends project.DummyObjectC.DummyObject.PhoneNumberOrBuilder> 
            getPhonesOrBuilderList() {
         if (phonesBuilder_ != null) {
           return phonesBuilder_.getMessageOrBuilderList();
@@ -1942,33 +1942,33 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public project.DummyObject.Person.PhoneNumber.Builder addPhonesBuilder() {
+      public project.DummyObjectC.DummyObject.PhoneNumber.Builder addPhonesBuilder() {
         return getPhonesFieldBuilder().addBuilder(
-            project.DummyObject.Person.PhoneNumber.getDefaultInstance());
+            project.DummyObjectC.DummyObject.PhoneNumber.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public project.DummyObject.Person.PhoneNumber.Builder addPhonesBuilder(
+      public project.DummyObjectC.DummyObject.PhoneNumber.Builder addPhonesBuilder(
           int index) {
         return getPhonesFieldBuilder().addBuilder(
-            index, project.DummyObject.Person.PhoneNumber.getDefaultInstance());
+            index, project.DummyObjectC.DummyObject.PhoneNumber.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
+       * <code>repeated .tutorial.DummyObject.PhoneNumber phones = 4;</code>
        */
-      public java.util.List<project.DummyObject.Person.PhoneNumber.Builder> 
+      public java.util.List<project.DummyObjectC.DummyObject.PhoneNumber.Builder> 
            getPhonesBuilderList() {
         return getPhonesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          project.DummyObject.Person.PhoneNumber, project.DummyObject.Person.PhoneNumber.Builder, project.DummyObject.Person.PhoneNumberOrBuilder> 
+          project.DummyObjectC.DummyObject.PhoneNumber, project.DummyObjectC.DummyObject.PhoneNumber.Builder, project.DummyObjectC.DummyObject.PhoneNumberOrBuilder> 
           getPhonesFieldBuilder() {
         if (phonesBuilder_ == null) {
           phonesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              project.DummyObject.Person.PhoneNumber, project.DummyObject.Person.PhoneNumber.Builder, project.DummyObject.Person.PhoneNumberOrBuilder>(
+              project.DummyObjectC.DummyObject.PhoneNumber, project.DummyObjectC.DummyObject.PhoneNumber.Builder, project.DummyObjectC.DummyObject.PhoneNumberOrBuilder>(
                   phones_,
                   ((bitField0_ & 0x00000008) == 0x00000008),
                   getParentForChildren(),
@@ -1990,87 +1990,87 @@ public final class DummyObject {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:tutorial.Person)
+      // @@protoc_insertion_point(builder_scope:tutorial.DummyObject)
     }
 
-    // @@protoc_insertion_point(class_scope:tutorial.Person)
-    private static final project.DummyObject.Person DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:tutorial.DummyObject)
+    private static final project.DummyObjectC.DummyObject DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new project.DummyObject.Person();
+      DEFAULT_INSTANCE = new project.DummyObjectC.DummyObject();
     }
 
-    public static project.DummyObject.Person getDefaultInstance() {
+    public static project.DummyObjectC.DummyObject getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<Person>
-        PARSER = new com.google.protobuf.AbstractParser<Person>() {
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<DummyObject>
+        PARSER = new com.google.protobuf.AbstractParser<DummyObject>() {
       @java.lang.Override
-      public Person parsePartialFrom(
+      public DummyObject parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Person(input, extensionRegistry);
+        return new DummyObject(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Person> parser() {
+    public static com.google.protobuf.Parser<DummyObject> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Person> getParserForType() {
+    public com.google.protobuf.Parser<DummyObject> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public project.DummyObject.Person getDefaultInstanceForType() {
+    public project.DummyObjectC.DummyObject getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface AddressBookOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:tutorial.AddressBook)
+  public interface DummyObjectsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:tutorial.DummyObjects)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    java.util.List<project.DummyObject.Person> 
+    java.util.List<project.DummyObjectC.DummyObject> 
         getPeopleList();
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    project.DummyObject.Person getPeople(int index);
+    project.DummyObjectC.DummyObject getPeople(int index);
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
     int getPeopleCount();
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    java.util.List<? extends project.DummyObject.PersonOrBuilder> 
+    java.util.List<? extends project.DummyObjectC.DummyObjectOrBuilder> 
         getPeopleOrBuilderList();
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    project.DummyObject.PersonOrBuilder getPeopleOrBuilder(
+    project.DummyObjectC.DummyObjectOrBuilder getPeopleOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code tutorial.AddressBook}
+   * Protobuf type {@code tutorial.DummyObjects}
    */
-  public  static final class AddressBook extends
+  public  static final class DummyObjects extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:tutorial.AddressBook)
-      AddressBookOrBuilder {
+      // @@protoc_insertion_point(message_implements:tutorial.DummyObjects)
+      DummyObjectsOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use AddressBook.newBuilder() to construct.
-    private AddressBook(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use DummyObjects.newBuilder() to construct.
+    private DummyObjects(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private AddressBook() {
+    private DummyObjects() {
       people_ = java.util.Collections.emptyList();
     }
 
@@ -2079,7 +2079,7 @@ public final class DummyObject {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AddressBook(
+    private DummyObjects(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2100,11 +2100,11 @@ public final class DummyObject {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                people_ = new java.util.ArrayList<project.DummyObject.Person>();
+                people_ = new java.util.ArrayList<project.DummyObjectC.DummyObject>();
                 mutable_bitField0_ |= 0x00000001;
               }
               people_.add(
-                  input.readMessage(project.DummyObject.Person.PARSER, extensionRegistry));
+                  input.readMessage(project.DummyObjectC.DummyObject.PARSER, extensionRegistry));
               break;
             }
             default: {
@@ -2131,48 +2131,48 @@ public final class DummyObject {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return project.DummyObject.internal_static_tutorial_AddressBook_descriptor;
+      return project.DummyObjectC.internal_static_tutorial_DummyObjects_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return project.DummyObject.internal_static_tutorial_AddressBook_fieldAccessorTable
+      return project.DummyObjectC.internal_static_tutorial_DummyObjects_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              project.DummyObject.AddressBook.class, project.DummyObject.AddressBook.Builder.class);
+              project.DummyObjectC.DummyObjects.class, project.DummyObjectC.DummyObjects.Builder.class);
     }
 
     public static final int PEOPLE_FIELD_NUMBER = 1;
-    private java.util.List<project.DummyObject.Person> people_;
+    private java.util.List<project.DummyObjectC.DummyObject> people_;
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    public java.util.List<project.DummyObject.Person> getPeopleList() {
+    public java.util.List<project.DummyObjectC.DummyObject> getPeopleList() {
       return people_;
     }
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    public java.util.List<? extends project.DummyObject.PersonOrBuilder> 
+    public java.util.List<? extends project.DummyObjectC.DummyObjectOrBuilder> 
         getPeopleOrBuilderList() {
       return people_;
     }
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
     public int getPeopleCount() {
       return people_.size();
     }
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    public project.DummyObject.Person getPeople(int index) {
+    public project.DummyObjectC.DummyObject getPeople(int index) {
       return people_.get(index);
     }
     /**
-     * <code>repeated .tutorial.Person people = 1;</code>
+     * <code>repeated .tutorial.DummyObject people = 1;</code>
      */
-    public project.DummyObject.PersonOrBuilder getPeopleOrBuilder(
+    public project.DummyObjectC.DummyObjectOrBuilder getPeopleOrBuilder(
         int index) {
       return people_.get(index);
     }
@@ -2223,10 +2223,10 @@ public final class DummyObject {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof project.DummyObject.AddressBook)) {
+      if (!(obj instanceof project.DummyObjectC.DummyObjects)) {
         return super.equals(obj);
       }
-      project.DummyObject.AddressBook other = (project.DummyObject.AddressBook) obj;
+      project.DummyObjectC.DummyObjects other = (project.DummyObjectC.DummyObjects) obj;
 
       boolean result = true;
       result = result && getPeopleList()
@@ -2251,69 +2251,69 @@ public final class DummyObject {
       return hash;
     }
 
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static project.DummyObject.AddressBook parseFrom(byte[] data)
+    public static project.DummyObjectC.DummyObjects parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static project.DummyObject.AddressBook parseFrom(java.io.InputStream input)
+    public static project.DummyObjectC.DummyObjects parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static project.DummyObject.AddressBook parseDelimitedFrom(java.io.InputStream input)
+    public static project.DummyObjectC.DummyObjects parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static project.DummyObject.AddressBook parseDelimitedFrom(
+    public static project.DummyObjectC.DummyObjects parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static project.DummyObject.AddressBook parseFrom(
+    public static project.DummyObjectC.DummyObjects parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2326,7 +2326,7 @@ public final class DummyObject {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(project.DummyObject.AddressBook prototype) {
+    public static Builder newBuilder(project.DummyObjectC.DummyObjects prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2342,26 +2342,26 @@ public final class DummyObject {
       return builder;
     }
     /**
-     * Protobuf type {@code tutorial.AddressBook}
+     * Protobuf type {@code tutorial.DummyObjects}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:tutorial.AddressBook)
-        project.DummyObject.AddressBookOrBuilder {
+        // @@protoc_insertion_point(builder_implements:tutorial.DummyObjects)
+        project.DummyObjectC.DummyObjectsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return project.DummyObject.internal_static_tutorial_AddressBook_descriptor;
+        return project.DummyObjectC.internal_static_tutorial_DummyObjects_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return project.DummyObject.internal_static_tutorial_AddressBook_fieldAccessorTable
+        return project.DummyObjectC.internal_static_tutorial_DummyObjects_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                project.DummyObject.AddressBook.class, project.DummyObject.AddressBook.Builder.class);
+                project.DummyObjectC.DummyObjects.class, project.DummyObjectC.DummyObjects.Builder.class);
       }
 
-      // Construct using project.DummyObject.AddressBook.newBuilder()
+      // Construct using project.DummyObjectC.DummyObjects.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2392,17 +2392,17 @@ public final class DummyObject {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return project.DummyObject.internal_static_tutorial_AddressBook_descriptor;
+        return project.DummyObjectC.internal_static_tutorial_DummyObjects_descriptor;
       }
 
       @java.lang.Override
-      public project.DummyObject.AddressBook getDefaultInstanceForType() {
-        return project.DummyObject.AddressBook.getDefaultInstance();
+      public project.DummyObjectC.DummyObjects getDefaultInstanceForType() {
+        return project.DummyObjectC.DummyObjects.getDefaultInstance();
       }
 
       @java.lang.Override
-      public project.DummyObject.AddressBook build() {
-        project.DummyObject.AddressBook result = buildPartial();
+      public project.DummyObjectC.DummyObjects build() {
+        project.DummyObjectC.DummyObjects result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2410,8 +2410,8 @@ public final class DummyObject {
       }
 
       @java.lang.Override
-      public project.DummyObject.AddressBook buildPartial() {
-        project.DummyObject.AddressBook result = new project.DummyObject.AddressBook(this);
+      public project.DummyObjectC.DummyObjects buildPartial() {
+        project.DummyObjectC.DummyObjects result = new project.DummyObjectC.DummyObjects(this);
         int from_bitField0_ = bitField0_;
         if (peopleBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2460,16 +2460,16 @@ public final class DummyObject {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof project.DummyObject.AddressBook) {
-          return mergeFrom((project.DummyObject.AddressBook)other);
+        if (other instanceof project.DummyObjectC.DummyObjects) {
+          return mergeFrom((project.DummyObjectC.DummyObjects)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(project.DummyObject.AddressBook other) {
-        if (other == project.DummyObject.AddressBook.getDefaultInstance()) return this;
+      public Builder mergeFrom(project.DummyObjectC.DummyObjects other) {
+        if (other == project.DummyObjectC.DummyObjects.getDefaultInstance()) return this;
         if (peopleBuilder_ == null) {
           if (!other.people_.isEmpty()) {
             if (people_.isEmpty()) {
@@ -2516,11 +2516,11 @@ public final class DummyObject {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        project.DummyObject.AddressBook parsedMessage = null;
+        project.DummyObjectC.DummyObjects parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (project.DummyObject.AddressBook) e.getUnfinishedMessage();
+          parsedMessage = (project.DummyObjectC.DummyObjects) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2531,22 +2531,22 @@ public final class DummyObject {
       }
       private int bitField0_;
 
-      private java.util.List<project.DummyObject.Person> people_ =
+      private java.util.List<project.DummyObjectC.DummyObject> people_ =
         java.util.Collections.emptyList();
       private void ensurePeopleIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          people_ = new java.util.ArrayList<project.DummyObject.Person>(people_);
+          people_ = new java.util.ArrayList<project.DummyObjectC.DummyObject>(people_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          project.DummyObject.Person, project.DummyObject.Person.Builder, project.DummyObject.PersonOrBuilder> peopleBuilder_;
+          project.DummyObjectC.DummyObject, project.DummyObjectC.DummyObject.Builder, project.DummyObjectC.DummyObjectOrBuilder> peopleBuilder_;
 
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public java.util.List<project.DummyObject.Person> getPeopleList() {
+      public java.util.List<project.DummyObjectC.DummyObject> getPeopleList() {
         if (peopleBuilder_ == null) {
           return java.util.Collections.unmodifiableList(people_);
         } else {
@@ -2554,7 +2554,7 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public int getPeopleCount() {
         if (peopleBuilder_ == null) {
@@ -2564,9 +2564,9 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public project.DummyObject.Person getPeople(int index) {
+      public project.DummyObjectC.DummyObject getPeople(int index) {
         if (peopleBuilder_ == null) {
           return people_.get(index);
         } else {
@@ -2574,10 +2574,10 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder setPeople(
-          int index, project.DummyObject.Person value) {
+          int index, project.DummyObjectC.DummyObject value) {
         if (peopleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2591,10 +2591,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder setPeople(
-          int index, project.DummyObject.Person.Builder builderForValue) {
+          int index, project.DummyObjectC.DummyObject.Builder builderForValue) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           people_.set(index, builderForValue.build());
@@ -2605,9 +2605,9 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public Builder addPeople(project.DummyObject.Person value) {
+      public Builder addPeople(project.DummyObjectC.DummyObject value) {
         if (peopleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2621,10 +2621,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder addPeople(
-          int index, project.DummyObject.Person value) {
+          int index, project.DummyObjectC.DummyObject value) {
         if (peopleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2638,10 +2638,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder addPeople(
-          project.DummyObject.Person.Builder builderForValue) {
+          project.DummyObjectC.DummyObject.Builder builderForValue) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           people_.add(builderForValue.build());
@@ -2652,10 +2652,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder addPeople(
-          int index, project.DummyObject.Person.Builder builderForValue) {
+          int index, project.DummyObjectC.DummyObject.Builder builderForValue) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           people_.add(index, builderForValue.build());
@@ -2666,10 +2666,10 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder addAllPeople(
-          java.lang.Iterable<? extends project.DummyObject.Person> values) {
+          java.lang.Iterable<? extends project.DummyObjectC.DummyObject> values) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2681,7 +2681,7 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder clearPeople() {
         if (peopleBuilder_ == null) {
@@ -2694,7 +2694,7 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
       public Builder removePeople(int index) {
         if (peopleBuilder_ == null) {
@@ -2707,16 +2707,16 @@ public final class DummyObject {
         return this;
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public project.DummyObject.Person.Builder getPeopleBuilder(
+      public project.DummyObjectC.DummyObject.Builder getPeopleBuilder(
           int index) {
         return getPeopleFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public project.DummyObject.PersonOrBuilder getPeopleOrBuilder(
+      public project.DummyObjectC.DummyObjectOrBuilder getPeopleOrBuilder(
           int index) {
         if (peopleBuilder_ == null) {
           return people_.get(index);  } else {
@@ -2724,9 +2724,9 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public java.util.List<? extends project.DummyObject.PersonOrBuilder> 
+      public java.util.List<? extends project.DummyObjectC.DummyObjectOrBuilder> 
            getPeopleOrBuilderList() {
         if (peopleBuilder_ != null) {
           return peopleBuilder_.getMessageOrBuilderList();
@@ -2735,33 +2735,33 @@ public final class DummyObject {
         }
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public project.DummyObject.Person.Builder addPeopleBuilder() {
+      public project.DummyObjectC.DummyObject.Builder addPeopleBuilder() {
         return getPeopleFieldBuilder().addBuilder(
-            project.DummyObject.Person.getDefaultInstance());
+            project.DummyObjectC.DummyObject.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public project.DummyObject.Person.Builder addPeopleBuilder(
+      public project.DummyObjectC.DummyObject.Builder addPeopleBuilder(
           int index) {
         return getPeopleFieldBuilder().addBuilder(
-            index, project.DummyObject.Person.getDefaultInstance());
+            index, project.DummyObjectC.DummyObject.getDefaultInstance());
       }
       /**
-       * <code>repeated .tutorial.Person people = 1;</code>
+       * <code>repeated .tutorial.DummyObject people = 1;</code>
        */
-      public java.util.List<project.DummyObject.Person.Builder> 
+      public java.util.List<project.DummyObjectC.DummyObject.Builder> 
            getPeopleBuilderList() {
         return getPeopleFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          project.DummyObject.Person, project.DummyObject.Person.Builder, project.DummyObject.PersonOrBuilder> 
+          project.DummyObjectC.DummyObject, project.DummyObjectC.DummyObject.Builder, project.DummyObjectC.DummyObjectOrBuilder> 
           getPeopleFieldBuilder() {
         if (peopleBuilder_ == null) {
           peopleBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              project.DummyObject.Person, project.DummyObject.Person.Builder, project.DummyObject.PersonOrBuilder>(
+              project.DummyObjectC.DummyObject, project.DummyObjectC.DummyObject.Builder, project.DummyObjectC.DummyObjectOrBuilder>(
                   people_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -2783,61 +2783,61 @@ public final class DummyObject {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:tutorial.AddressBook)
+      // @@protoc_insertion_point(builder_scope:tutorial.DummyObjects)
     }
 
-    // @@protoc_insertion_point(class_scope:tutorial.AddressBook)
-    private static final project.DummyObject.AddressBook DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:tutorial.DummyObjects)
+    private static final project.DummyObjectC.DummyObjects DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new project.DummyObject.AddressBook();
+      DEFAULT_INSTANCE = new project.DummyObjectC.DummyObjects();
     }
 
-    public static project.DummyObject.AddressBook getDefaultInstance() {
+    public static project.DummyObjectC.DummyObjects getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<AddressBook>
-        PARSER = new com.google.protobuf.AbstractParser<AddressBook>() {
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<DummyObjects>
+        PARSER = new com.google.protobuf.AbstractParser<DummyObjects>() {
       @java.lang.Override
-      public AddressBook parsePartialFrom(
+      public DummyObjects parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AddressBook(input, extensionRegistry);
+        return new DummyObjects(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<AddressBook> parser() {
+    public static com.google.protobuf.Parser<DummyObjects> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<AddressBook> getParserForType() {
+    public com.google.protobuf.Parser<DummyObjects> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public project.DummyObject.AddressBook getDefaultInstanceForType() {
+    public project.DummyObjectC.DummyObjects getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_Person_descriptor;
+    internal_static_tutorial_DummyObject_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_tutorial_Person_fieldAccessorTable;
+      internal_static_tutorial_DummyObject_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_Person_PhoneNumber_descriptor;
+    internal_static_tutorial_DummyObject_PhoneNumber_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable;
+      internal_static_tutorial_DummyObject_PhoneNumber_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_AddressBook_descriptor;
+    internal_static_tutorial_DummyObjects_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_tutorial_AddressBook_fieldAccessorTable;
+      internal_static_tutorial_DummyObjects_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2847,15 +2847,15 @@ public final class DummyObject {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021DummyObject.proto\022\010tutorial\"\333\001\n\006Person" +
-      "\022\014\n\004name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email\030\003 \001(" +
-      "\t\022,\n\006phones\030\004 \003(\0132\034.tutorial.Person.Phon" +
-      "eNumber\032M\n\013PhoneNumber\022\016\n\006number\030\001 \002(\t\022." +
-      "\n\004type\030\002 \001(\0162\032.tutorial.Person.PhoneType" +
-      ":\004HOME\"+\n\tPhoneType\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020" +
-      "\001\022\010\n\004WORK\020\002\"/\n\013AddressBook\022 \n\006people\030\001 \003" +
-      "(\0132\020.tutorial.PersonB\026\n\007projectB\013DummyOb" +
-      "ject"
+      "\n\021DummyObject.proto\022\010tutorial\"\352\001\n\013DummyO" +
+      "bject\022\014\n\004name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email" +
+      "\030\003 \001(\t\0221\n\006phones\030\004 \003(\0132!.tutorial.DummyO" +
+      "bject.PhoneNumber\032R\n\013PhoneNumber\022\016\n\006numb" +
+      "er\030\001 \002(\t\0223\n\004type\030\002 \001(\0162\037.tutorial.DummyO" +
+      "bject.PhoneType:\004HOME\"+\n\tPhoneType\022\n\n\006MO" +
+      "BILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002\"5\n\014DummyObjec" +
+      "ts\022%\n\006people\030\001 \003(\0132\025.tutorial.DummyObjec" +
+      "tB\027\n\007projectB\014DummyObjectC"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2869,23 +2869,23 @@ public final class DummyObject {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_tutorial_Person_descriptor =
+    internal_static_tutorial_DummyObject_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_tutorial_Person_fieldAccessorTable = new
+    internal_static_tutorial_DummyObject_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_tutorial_Person_descriptor,
+        internal_static_tutorial_DummyObject_descriptor,
         new java.lang.String[] { "Name", "Id", "Email", "Phones", });
-    internal_static_tutorial_Person_PhoneNumber_descriptor =
-      internal_static_tutorial_Person_descriptor.getNestedTypes().get(0);
-    internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable = new
+    internal_static_tutorial_DummyObject_PhoneNumber_descriptor =
+      internal_static_tutorial_DummyObject_descriptor.getNestedTypes().get(0);
+    internal_static_tutorial_DummyObject_PhoneNumber_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_tutorial_Person_PhoneNumber_descriptor,
+        internal_static_tutorial_DummyObject_PhoneNumber_descriptor,
         new java.lang.String[] { "Number", "Type", });
-    internal_static_tutorial_AddressBook_descriptor =
+    internal_static_tutorial_DummyObjects_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_tutorial_AddressBook_fieldAccessorTable = new
+    internal_static_tutorial_DummyObjects_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_tutorial_AddressBook_descriptor,
+        internal_static_tutorial_DummyObjects_descriptor,
         new java.lang.String[] { "People", });
   }
 
