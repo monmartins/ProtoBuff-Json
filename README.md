@@ -8,7 +8,7 @@ Execute shell script install-protobuf.sh
 
     $ ./install-protobuf.sh
 
-# Install protobuff on java
+# Install ProtoBuff on Java
 
 ## Download jar
 
