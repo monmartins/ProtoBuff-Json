@@ -3,9 +3,6 @@ package project;
 
 import project.DummyObjectC.DummyObject;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.StringWriter;
 
 import org.json.*;
 
